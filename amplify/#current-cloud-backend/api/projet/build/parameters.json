@@ -1,0 +1,14 @@
+{
+    "CreateAPIKey": 0,
+    "AppSyncApiName": "projet",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authprojet6c6138ee",
+            "Outputs.UserPoolId"
+        ]
+    },
+    "S3DeploymentBucket": "amplify-projet-dev-04117-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/072a12e9f9b9b470883e89b23f3f88ad57ecb147"
+}
